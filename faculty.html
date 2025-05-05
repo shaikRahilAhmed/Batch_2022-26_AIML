@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faculty Info - AIML Department</title>
+    <meta name="description" content="AIML Department Faculty Information" />
+    <meta name="author" content="AIML Department" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/faculty.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <header>
+        <nav id="navbar">
+          <button onclick="toggleSidebar()" aria-label="Menu">☰</button>
+          <div class="page-title">Faculty Details</div>
+          <div class="placeholder"></div>
+        </nav>
+
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+          <a href="index.html">Home</a>
+          <a href="students.html">Student Info</a>
+          <a href="faculty.html">Faculty Info</a>
+          <a href="memories.html">Memories</a>
+          <a href="chat.html">Group Chat</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </header>
+
+      <main>
+        <div class="faculty-container">
+          <div class="faculty-card">
+            <img src="/placeholder.svg" alt="Dr. Rajesh Kumar">
+            <div class="faculty-info">
+              <h3>Dr. Rajesh Kumar</h3>
+              <p class="designation">Head of Department</p>
+              <p class="qualification">Ph.D. in Machine Learning, IIT Delhi</p>
+              <p class="experience">15+ years of teaching and research experience</p>
+              <p class="specialization">Specialization: Deep Learning, Computer Vision</p>
+            </div>
+          </div>
+          
+          <div class="faculty-card">
+            <img src="/placeholder.svg" alt="Prof. Sunita Sharma">
+            <div class="faculty-info">
+              <h3>Prof. Sunita Sharma</h3>
+              <p class="designation">Associate Professor</p>
+              <p class="qualification">Ph.D. in Data Science, IISc Bangalore</p>
+              <p class="experience">12 years of teaching experience</p>
+              <p class="specialization">Specialization: Natural Language Processing, Data Mining</p>
+            </div>
+          </div>
+          
+          <div class="faculty-card">
+            <img src="/placeholder.svg" alt="Dr. Anand Prakash">
+            <div class="faculty-info">
+              <h3>Dr. Anand Prakash</h3>
+              <p class="designation">Assistant Professor</p>
+              <p class="qualification">Ph.D. in Artificial Intelligence, MIT</p>
+              <p class="experience">8 years of industry and teaching experience</p>
+              <p class="specialization">Specialization: Reinforcement Learning, Robotics</p>
+            </div>
+          </div>
+          
+          <div class="faculty-card">
+            <img src="/placeholder.svg" alt="Prof. Meera Singh">
+            <div class="faculty-info">
+              <h3>Prof. Meera Singh</h3>
+              <p class="designation">Assistant Professor</p>
+              <p class="qualification">M.Tech in Computer Science, NIT Warangal</p>
+              <p class="experience">5 years of teaching experience</p>
+              <p class="specialization">Specialization: Neural Networks, Pattern Recognition</p>
+            </div>
+          </div>
+          
+          <div class="faculty-card">
+            <img src="/placeholder.svg" alt="Dr. Vijay Reddy">
+            <div class="faculty-info">
+              <h3>Dr. Vijay Reddy</h3>
+              <p class="designation">Visiting Faculty</p>
+              <p class="qualification">Ph.D. in Computer Science, Stanford University</p>
+              <p class="experience">20+ years of industry experience at Google and Microsoft</p>
+              <p class="specialization">Specialization: Machine Learning Systems, Big Data</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>© <script>document.write(new Date().getFullYear())</script> AIML Department 2022-2026 | Made with ❤️</p>
+      </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

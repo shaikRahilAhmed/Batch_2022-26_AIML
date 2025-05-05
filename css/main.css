@@ -1,0 +1,245 @@
+
+/* Main CSS for AIML Department Website */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: rgb(215, 247, 247);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  /* Header and navigation styles */
+  #navbar {
+    background-color: rgb(8, 137, 160);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+  }
+  
+  #navbar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .branchName, .page-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .placeholder {
+    width: 24px; /* To balance the navbar */
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(5, 101, 133);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: rgb(8, 137, 160);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+  }
+  
+  /* Button styles */
+  .btn {
+    background-color: rgb(8, 137, 160);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: rgb(5, 101, 133);
+  }
+  
+  /* Home page specific styles */
+  .hero-section {
+    background: linear-gradient(to bottom, rgb(8, 137, 160), rgb(5, 101, 133));
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  .college-logo {
+    max-height: 120px;
+  }
+  
+  .group-photo-container {
+    margin: 20px 0;
+  }
+  
+  .group-photo {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .department-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px 0;
+  }
+  
+  .info-column {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    color: rgb(8, 137, 160);
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgb(8, 137, 160);
+    padding-bottom: 5px;
+  }
+  
+  .highlights-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .highlights-list li {
+    margin-bottom: 8px;
+  }
+  
+  .quick-links {
+    margin: 30px 0;
+  }
+  
+  .links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .link-card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(8, 137, 160);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .department-info {
+      flex-direction: column;
+    }
+    
+    .hero-section h1 {
+      font-size: 28px;
+    }
+    
+    .hero-section p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Text utility classes */
+  .text-center {
+    text-align: center;
+  }
+  

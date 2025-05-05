@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group Chat - AIML Department</title>
+    <meta name="description" content="AIML Department Group Chat" />
+    <meta name="author" content="AIML Department" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/chat.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <header>
+        <nav id="navbar">
+          <button onclick="toggleSidebar()" aria-label="Menu">☰</button>
+          <div class="page-title">Group Chat</div>
+          <div class="placeholder"></div>
+        </nav>
+
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+          <a href="index.html">Home</a>
+          <a href="students.html">Student Info</a>
+          <a href="faculty.html">Faculty Info</a>
+          <a href="memories.html">Memories</a>
+          <a href="chat.html">Group Chat</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </header>
+
+      <main>
+        <div class="chat-container">
+          <div class="chat-header">
+            <h2>AIML Department Group Chat</h2>
+          </div>
+          
+          <div class="chat-messages" id="chatMessages">
+            <div class="message received">
+              <div class="message-sender">System</div>
+              <div class="message-content">Welcome to the AIML Department Group Chat! This is a demo interface.</div>
+              <div class="message-time">12:00</div>
+            </div>
+            
+            <div class="message received">
+              <div class="message-sender">Prof. Kumar</div>
+              <div class="message-content">Hello students! Remember that your assignments are due next week.</div>
+              <div class="message-time">12:05</div>
+            </div>
+          </div>
+          
+          <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Type your message here...">
+            <button onclick="sendMessage()">Send</button>
+          </div>
+        </div>
+        
+        <div class="chat-note">
+          <p>Note: This is a demo chat interface. In a real implementation, messages would be stored in a database and synchronized across users.</p>
+        </div>
+      </main>
+
+      <footer>
+        <p>© <script>document.write(new Date().getFullYear())</script> AIML Department 2022-2026 | Made with ❤️</p>
+      </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/chat.js"></script>
+  </body>
+</html>

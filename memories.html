@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memories - AIML Department</title>
+    <meta name="description" content="AIML Department Memories" />
+    <meta name="author" content="AIML Department" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/memories.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <header>
+        <nav id="navbar">
+          <button onclick="toggleSidebar()" aria-label="Menu">☰</button>
+          <div class="page-title">Department Memories</div>
+          <div class="placeholder"></div>
+        </nav>
+
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+          <a href="index.html">Home</a>
+          <a href="students.html">Student Info</a>
+          <a href="faculty.html">Faculty Info</a>
+          <a href="memories.html">Memories</a>
+          <a href="chat.html">Group Chat</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </header>
+
+      <main>
+        <div class="tab-container">
+          <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'events')">Events</button>
+            <button class="tab-button" onclick="openTab(event, 'trips')">Trips</button>
+            <button class="tab-button" onclick="openTab(event, 'projects')">Projects</button>
+            <button class="tab-button" onclick="openTab(event, 'celebrations')">Celebrations</button>
+          </div>
+          
+          <div id="events" class="tab-content active">
+            <div class="memory-gallery">
+              <div class="memory-card">
+                <img src="/placeholder.svg" alt="Tech Fest 2023">
+                <div class="memory-info">
+                  <h3>Tech Fest 2023</h3>
+                  <p>Our students showcased innovative AI projects at the annual Tech Fest.</p>
+                  <span class="date">March 15, 2023</span>
+                </div>
+              </div>
+              
+              <div class="memory-card">
+                <img src="/placeholder.svg" alt="AI Workshop">
+                <div class="memory-info">
+                  <h3>AI Workshop</h3>
+                  <p>Workshop on latest AI trends conducted by industry experts.</p>
+                  <span class="date">July 10, 2023</span>
+                </div>
+              </div>
+              
+              <div class="memory-card">
+                <img src="/placeholder.svg" alt="Coding Competition">
+                <div class="memory-info">
+                  <h3>Coding Competition</h3>
+                  <p>Students participated in a 24-hour coding hackathon.</p>
+                  <span class="date">September 5, 2023</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="trips" class="tab-content">
+            <div class="memory-gallery">
+              <div class="memory-card">
+                <img src="/placeholder.svg" alt="Microsoft Office Visit">
+                <div class="memory-info">
+                  <h3>Microsoft Office Visit</h3>
+                  <p>Students toured Microsoft's AI research facility.</p>
+                  <span class="date">October 20, 2023</span>
+                </div>
+              </div>
+              
+              <div class="memory-card">
+                <img src="/placeholder.svg" alt="Tech Conference Trip">
+                <div class="memory-info">
+                  <h3>Tech Conference Trip</h3>
+                  <p>Department trip to attend the International AI Conference.</p>
+                  <span class="date">December 5, 2023</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="projects" class="tab-content">
+            <div class="memory-gallery">
+              <div class="memory-card">
+                <img src="/placeholder.svg" alt="Smart Agriculture Project">
+                <div class="memory-info">
+                  <h3>Smart Agriculture Project</h3>
+                  <p>Final year project using AI for crop monitoring and prediction.</p>
+                  <span class="date">November 15, 2023</span>
+                </div>
+              </div>
+              
+              <div class="memory-card">
+                <img src="/placeholder.svg" alt="Healthcare AI System">
+                <div class="memory-info">
+                  <h3>Healthcare AI System</h3>
+                  <p>Students developed an AI system for early disease detection.</p>
+                  <span class="date">January 25, 2024</span>
+                </div>
+              </div>
+              
+              <div class="memory-card">
+                <img src="/placeholder.svg" alt="ML Workshop">
+                <div class="memory-info">
+                  <h3>ML Workshop</h3>
+                  <p>Hands-on workshop for implementing machine learning models.</p>
+                  <span class="date">February 10, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="celebrations" class="tab-content">
+            <div class="memory-gallery">
+              <div class="memory-card">
+                <img src="/placeholder.svg" alt="Department Day">
+                <div class="memory-info">
+                  <h3>Department Day</h3>
+                  <p>Annual celebration of the AIML department foundation.</p>
+                  <span class="date">April 5, 2023</span>
+                </div>
+              </div>
+              
+              <div class="memory-card">
+                <img src="/placeholder.svg" alt="New Year Celebration">
+                <div class="memory-info">
+                  <h3>New Year Celebration</h3>
+                  <p>Department came together to celebrate the new year.</p>
+                  <span class="date">January 1, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>© <script>document.write(new Date().getFullYear())</script> AIML Department 2022-2026 | Made with ❤️</p>
+      </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

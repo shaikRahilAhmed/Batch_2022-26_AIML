@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIML Department - Home</title>
+    <meta name="description" content="AIML Department 2022-2026" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <header>
+        <nav id="navbar">
+          <button onclick="toggleSidebar()" aria-label="Menu">☰</button>
+          <div class=""></div>
+        </nav>
+
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+          <a href="index.html">Home</a>
+          <a href="students.html">Student Info</a>
+          <a href="faculty.html">Faculty Info</a>
+          <a href="memories.html">Memories</a>
+          <a href="chat.html">Group Chat</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </header>
+
+      <main>
+        <div class="hero-section">
+          <h1>AIML Department 2022-2026</h1>
+          <p>Welcome to the official website of our Artificial Intelligence and Machine Learning department</p>
+        </div>
+
+        <div class="logo-container">
+          <img src="./src/clgLogo.png" alt="College Logo" class="college-logo" />
+        </div>
+
+        <div class="group-photo-container">
+          <img src="./src/grupPhoto.jpg" alt="AIML Department Group Photo" class="group-photo" />
+        </div>
+
+        <div class="department-info">
+          <div class="info-column">
+            <h2 class="section-title">About Our Department</h2>
+            <p>The Department of Artificial Intelligence and Machine Learning (AIML) was established in 2022. Our program focuses on developing the next generation of AI professionals who can contribute to technological advancement.</p>
+            <p>We emphasize both theoretical knowledge and practical application, ensuring our students are well-prepared for the industry or further research.</p>
+          </div>
+
+          <div class="info-column">
+            <h2 class="section-title">Highlights</h2>
+            <ul class="highlights-list">
+              <li>State-of-the-art computing labs</li>
+              <li>Industry-focused curriculum</li>
+              <li>Regular workshops and seminars</li>
+              <li>Collaboration with leading tech companies</li>
+              <li>Research opportunities for students</li>
+              <li>Expert faculty with industry experience</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="quick-links">
+          <h2 class="section-title">Quick Links</h2>
+          <div class="links-grid">
+            <a href="students.html" class="link-card">Student Directory</a>
+            <a href="faculty.html" class="link-card">Meet Our Faculty</a>
+            <a href="memories.html" class="link-card">Department Memories</a>
+            <a href="chat.html" class="link-card">Group Chat</a>
+            <a href="contact.html" class="link-card">Contact Us</a>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>© <script>document.write(new Date().getFullYear())</script> AIML Department 2022-2026 | Made with ❤️</p>
+      </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

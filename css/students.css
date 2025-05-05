@@ -1,0 +1,35 @@
+
+/* Student page specific styles */
+
+.studentCard1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .studentCard {
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    transition: transform 0.2s;
+  }
+  
+  .studentCard img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+  }
+  
+  .studentCard p {
+    margin-top: 10px;
+  }
+  
+  .studentCard:hover {
+    transform: scale(1.05);
+  }
+  
