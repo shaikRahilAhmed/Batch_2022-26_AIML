@@ -153,7 +153,7 @@
   }
   
   .college-logo {
-    width: 1100px;
+    max-height: 200px;
   }
   
   .group-photo-container {
